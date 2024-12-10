@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background: linear-gradient(135deg, #4c669f, #3b5998, #192f6a);
+          color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          overflow: hidden;
+        }
+      
+        .special {
+          border: 3px solid #fff;
+          background-color: rgba(0, 0, 0, 0.8);
+          color: #fff;
+          border-radius: 10px;
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+          padding: 20px 40px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+          max-width: 400px;
+          width: 100%;
+        }
+      
+        .special label {
+          font-size: 1.1rem;
+          font-weight: bold;
+          align-self: flex-start;
+        }
+      
+        .special input {
+          width: 100%;
+          padding: 10px;
+          font-size: 1rem;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          outline: none;
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+          transition: all 0.3s ease;
+        }
+      
+        .special input:focus {
+          border-color: #007bff;
+          box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.8);
+        }
+      
+        .special button {
+          width: 100%;
+          padding: 10px;
+          font-size: 1.1rem;
+          font-weight: bold;
+          color: #fff;
+          background-color: #007bff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+      
+        .special button:hover {
+          background-color: #0056b3;
+          transform: scale(1.05);
+        }
+      
+        .special button:active {
+          background-color: #003d80;
+        }
+      
+        #message {
+          margin-top: 20px;
+          font-size: 1.2rem;
+          font-weight: bold;
+          color: #00ff00;
+          text-align: center;
+        }
+      </style>
+      
+</head>
+
+<body>
+    <!-- <div id="hoverbox">hover me</div>
+       <p id="status"></p> 
+       <button onclick="click">clickme</button> -->
+       <div class="special">
+       <form id="form">
+        <label>NAME</label>
+        <input type="text" id="name"placeholder="enter your name"><br>
+        <label>PHONENUMBER</label>
+        <input type="number"id="number"placeholder="enter your phone number"><br>
+        <label>QUALIFICATION</label>
+        <input type="text"id ="quali"placeholder="enter your qualification"><br>
+         <label>DOB</label>
+        <input type="number" id="dob"placeholder="enter your DOB"><br>
+    <button type="submit">Submit</button>
+
+    </form>
+    </div>
+<p id="message"></p></form>
+    <script src="yup.js"></script>
+</body>
+</html>

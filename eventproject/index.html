@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Calculator Display</title>
+    <style>
+        body
+        {
+            background-image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU3ejzMTElBAJc8Fs0D6RiS0IxxG_5DqX2_A&s";
+        }
+        #buttons {
+            margin-top: 20px;
+        }
+        button {
+            font-size: 20px;
+            margin: 5px;
+            padding: 10px 20px;
+        }
+        div.buttons{
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Ajey's Dynamic Calculator</h1>
+    <div id="buttons" >
+        <button onclick="handleButtonClick('1')">1</button>
+        <button onclick="handleButtonClick('2')">2</button>
+        <button onclick="handleButtonClick('3')">3</button><br>
+        <button onclick="handleButtonClick('4')">4</button>
+        <button onclick="handleButtonClick('5')">5</button>
+        <button onclick="handleButtonClick('6')">6</button><br>
+        <button onclick="handleButtonClick('7')">7</button>
+        <button onclick="handleButtonClick('8')">8</button>
+        <button onclick="handleButtonClick('9')">9</button><br>
+        <button onclick="handleButtonClick('0')">0</button>
+        <button onclick="handleButtonClick('+')">+</button>
+        <button onclick="handleButtonClick('-')">-</button>
+        <button onclick="handleButtonClick('*')">*</button>
+        <button onclick="handleButtonClick('/')">/</button>
+        <button onclick="calculateResult()">=</button>
+        <button onclick="clearDisplay()">C</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
